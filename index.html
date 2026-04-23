@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fix8 Tutorial — Coming Soon</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --fix8-bg: #2f333c;
+      --fix8-surface: #3b404a;
+      --fix8-surface-2: #474d58;
+      --fix8-accent: #17d4d4;
+      --fix8-accent-soft: rgba(23, 212, 212, 0.14);
+      --fix8-text: #edf2f7;
+      --fix8-muted: #b8c0cc;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at top right, rgba(23, 212, 212, 0.09), transparent 30%),
+        linear-gradient(180deg, #2c3038 0%, #262a31 100%);
+      color: var(--fix8-text);
+      min-height: 100vh;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .navbar {
+      background: rgba(47, 51, 60, 0.78);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .brand-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      color: var(--fix8-text);
+      text-decoration: none;
+      font-weight: 700;
+      letter-spacing: .04em;
+    }
+
+    .brand-pill:hover { color: var(--fix8-text); }
+
+    .brand-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--fix8-accent);
+      box-shadow: 0 0 18px rgba(23, 212, 212, 0.7);
+    }
+
+    .hero {
+      padding: 6rem 0 4rem;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: .45rem .8rem;
+      border-radius: 999px;
+      background: var(--fix8-accent-soft);
+      border: 1px solid rgba(23, 212, 212, 0.28);
+      color: #98f5f5;
+      font-size: .85rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .display-title {
+      font-weight: 800;
+      letter-spacing: -.03em;
+      line-height: 1.05;
+    }
+
+    .lead, .muted, li {
+      color: var(--fix8-muted);
+    }
+
+    .btn-fix8 {
+      background: var(--fix8-accent);
+      color: #11252a;
+      border: none;
+      font-weight: 700;
+      box-shadow: 0 10px 25px rgba(23, 212, 212, 0.2);
+    }
+
+    .btn-fix8:hover {
+      background: #35dddd;
+      color: #11252a;
+    }
+
+    .btn-outline-fix8 {
+      border: 1px solid rgba(23, 212, 212, 0.4);
+      color: var(--fix8-text);
+      background: rgba(255,255,255,0.02);
+    }
+
+    .btn-outline-fix8:hover {
+      background: rgba(23, 212, 212, 0.12);
+      color: white;
+      border-color: rgba(23, 212, 212, 0.6);
+    }
+
+    .hero-card, .feature-card {
+      background: linear-gradient(180deg, rgba(71, 77, 88, 0.95), rgba(52, 57, 67, 0.96));
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 1.25rem;
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.26);
+    }
+
+    .hero-shot {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 1rem;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .section-title {
+      font-weight: 750;
+      letter-spacing: -.02em;
+    }
+
+    .feature-card {
+      height: 100%;
+      padding: 1.25rem;
+    }
+
+    .feature-icon {
+      width: 2.6rem;
+      height: 2.6rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: .85rem;
+      background: var(--fix8-accent-soft);
+      color: #97f8f8;
+      font-weight: 700;
+      margin-bottom: .95rem;
+      border: 1px solid rgba(23, 212, 212, 0.22);
+    }
+
+    .footer-note {
+      color: #9aa4b2;
+      font-size: .95rem;
+    }
+
+    .glass {
+      background: rgba(255,255,255,0.025);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 1rem;
+    }
+
+    ul.clean-list {
+      padding-left: 1.15rem;
+      margin-bottom: 0;
+    }
+
+    .section-space {
+      padding-bottom: 3rem;
+    }
+
+    @media (max-width: 991px) {
+      .hero {
+        padding: 4.5rem 0 3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="brand-pill" href="#">
+        <span class="brand-dot"></span>
+        <span>Fix8</span>
+      </a>
+      <div class="ms-auto d-flex gap-2">
+        <a class="btn btn-sm btn-outline-fix8" href="https://github.com/nalmadi/fix8" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-6">
+            <span class="eyebrow mb-3">Fix8 tutorial</span>
+            <h1 class="display-title display-4 mb-3">Tutorial coming soon.</h1>
+            <p class="lead mb-4">
+              A hands-on tutorial is coming soon: <strong>“Eye Tracking Data Correction and Preprocessing in Reading Research with Fix8: From Raw Data to Insights.”</strong>
+              This tutorial presents a complete workflow for identifying and correcting fixation-level errors such as spatial drift, misassigned fixations, and implausible patterns—combining algorithmic methods with user-in-the-loop correction.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mb-4">
+              <a class="btn btn-fix8 btn-lg px-4" href="https://github.com/nalmadi/fix8" target="_blank" rel="noopener noreferrer">View Fix8 on GitHub</a>
+            </div>
+            <div class="glass p-3 p-md-4">
+              <div class="row g-3 text-center text-md-start">
+                <div class="col-md-4">
+                  <div class="h3 mb-1">Audience</div>
+                  <div class="muted">Beginners to experts</div>
+                </div>
+                <div class="col-md-4">
+                  <div class="h3 mb-1">Format</div>
+                  <div class="muted">Hands-on session</div>
+                </div>
+                <div class="col-md-4">
+                  <div class="h3 mb-1">Focus</div>
+                  <div class="muted">Correction + preprocessing</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-card p-3 p-md-4">
+              <img class="hero-shot" src="assets/fix8-tour-1.png" alt="Annotated Fix8 interface screenshot preview">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space">
+      <div class="container">
+        <div class="hero-card p-4 p-md-5">
+          <h2 class="h3 mb-3">Why this tutorial matters</h2>
+          <p class="muted mb-0">
+            Eye-tracking data in reading tasks is highly sensitive to small spatial inaccuracies. Even minor drift can lead to incorrect word assignments, distorted fixation measures, and unreliable results. This tutorial focuses on principled, reproducible correction workflows that go beyond black-box approaches—emphasizing transparency, methodological control, and best practices in preprocessing.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space">
+      <div class="container">
+        <div class="d-flex align-items-end justify-content-between flex-wrap gap-3 mb-4">
+          <div>
+            <h2 class="section-title h1 mb-2">What the tutorial will cover</h2>
+            <p class="muted mb-0">A practical workflow from raw eye-tracking data to corrected, reportable output.</p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-3">
+            <div class="feature-card">
+              <div class="feature-icon">01</div>
+              <h3 class="h5">Understanding data errors</h3>
+              <p class="mb-0">Identify spatial drift, distortions, and fixation-level errors in reading data.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-3">
+            <div class="feature-card">
+              <div class="feature-icon">02</div>
+              <h3 class="h5">Visualization & diagnosis</h3>
+              <p class="mb-0">Use Fix8 to explore gaze data and detect misalignments and anomalies.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-3">
+            <div class="feature-card">
+              <div class="feature-icon">03</div>
+              <h3 class="h5">Correction workflows</h3>
+              <p class="mb-0">Apply manual, automated, and semi-automated correction strategies.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-3">
+            <div class="feature-card">
+              <div class="feature-icon">04</div>
+              <h3 class="h5">From data to insights</h3>
+              <p class="mb-0">Export cleaned data, apply filters, and compute reliable reading metrics.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <h2 class="section-title h2 mb-3">Hands-on, end-to-end workflow</h2>
+            <p class="muted">
+              The tutorial is designed as a <strong>2-hour interactive session</strong> combining short presentations with guided exercises.
+              Participants will work directly with real and synthetic datasets, including simulated drift scenarios,
+              to build intuition and practical skills in fixation correction.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="glass p-4">
+              <ul class="clean-list">
+                <li>Real and synthetic eye-tracking datasets</li>
+                <li>Step-by-step correction exercises</li>
+                <li>Integrated visualization + correction workflow</li>
+                <li>Best practices for reporting and reproducibility</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space">
+      <div class="container">
+        <div class="hero-card p-4">
+          <h2 class="h4 mb-2">Who this is for</h2>
+          <p class="muted mb-0">
+            Researchers and practitioners in eye tracking, HCI, psychology, linguistics, and vision science—from beginners to experienced users seeking robust preprocessing workflows.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-4 py-md-5">
+    <div class="container">
+      <div class="hero-card p-4 p-md-5">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-8">
+            <h2 class="h3 mb-2">Fix8 is an open-source GUI tool for eye-tracking data in reading tasks.</h2>
+            <p class="footer-note mb-0">
+              Fix8 supports manual, automated, and semi-automated correction of eye-tracking data in reading tasks, enabling researchers to balance efficiency with methodological control and reproducibility.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a class="btn btn-fix8 px-4" href="https://github.com/nalmadi/fix8" target="_blank" rel="noopener noreferrer">Explore the project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
